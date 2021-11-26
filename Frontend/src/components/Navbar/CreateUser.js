@@ -47,7 +47,7 @@ export default function CreateUser(props) {
     if (!isEmpty(firstName)) {
       handleInputError("firstName", "");
     } else {
-      handleInputError("firstName", "Enter fistName");
+      handleInputError("firstName", "Enter firstName");
       formError = true;
     }
 
@@ -131,7 +131,7 @@ export default function CreateUser(props) {
             headers: {
               Accept: "application/json",
               Authorization:
-                "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYW5kaHUzMjQ1Iiwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJpc3MiOiJBVVRIX1NFUlZJQ0UiLCJleHAiOjE2MzcwNzM4MjksImlhdCI6MTYzNzA3MjAyOX0.XJlnF-FvYb8K6L8CZO71eInl9DjxQFW0jpy-fQ4AnZc",
+                "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYW5kaGEwODkyIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJBVVRIX1NFUlZJQ0UiLCJleHAiOjE2MzcyMTk1MzksImlhdCI6MTYzNzIxNTkzOX0.imbbgGkey_JjfiqiQRgOyy7Q6mOKmAdddzkRgGGsB8g",
               "Content-Type": "application/json",
             },
             body: JSON.stringify(credentials),
